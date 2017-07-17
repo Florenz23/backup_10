@@ -8,17 +8,21 @@ const createConnectData = (description, text) => {
 const createUser = () => {
     let userData_personalData_name = createConnectData('Name','Trump')
     let userData_personalData_surname = createConnectData('Vorname','Donald')
-    let userData_personalData_phone = createConnectData('Handy','111 1111 111')
+    let userData_personalData_phone = createConnectData('Handy','+1 111 1111 111')
+    let userData_personalData_email = createConnectData('Email','donald@trump.com')
     let userData_personalData_image = createConnectData('Image',donny)
-    let userData_hashTagData_color = createConnectData('Lieblingsfarbe','blau')
-    let userData_hashTagData_hobby = createConnectData('Hobbies','Geld, Immobilien')
+    let userData_hashTagData_color = createConnectData('Standort','Trump Tower')
+    let userData_hashTagData_hobby = createConnectData('Institution','Trump')
+    let userData_hashTagData_3 = createConnectData('Lieblingswörter','Amazing, Huge, Terrific')
     let userData_socialData_facebook = createConnectData('Facebook','https://web.facebook.com/DonaldTrump/?_rdc=1&_rdr')
     let userData_socialData_linkedIn = createConnectData('LinkedIn','https://www.linkedin.com/in/donald-trump-jr-4454b862/?locale=de_DE')
     let userData_socialData_twitter = createConnectData('Twitter','https://twitter.com/realdonaldtrump?lang=de')
     let publicSharedData_personalData = []
 
     publicSharedData_personalData.push(userData_personalData_name)
+    publicSharedData_personalData.push(userData_personalData_surname)
     publicSharedData_personalData.push(userData_personalData_phone)
+    publicSharedData_personalData.push(userData_personalData_email)
 
     let publicSharedData_socialData = []
     publicSharedData_socialData.push(userData_socialData_facebook)
@@ -27,6 +31,7 @@ const createUser = () => {
     let publicSharedData_hashTagData = []
     publicSharedData_hashTagData.push(userData_hashTagData_hobby)
     publicSharedData_hashTagData.push(userData_hashTagData_color)
+    publicSharedData_hashTagData.push(userData_hashTagData_3)
 
     let userData_personalData = []
     userData_personalData.push(userData_personalData_surname)
