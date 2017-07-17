@@ -2,7 +2,8 @@ import React, {PropTypes, Component} from 'react';
 import {
   Button,
   View,
-  StyleSheet
+  StyleSheet,
+  Image
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -14,7 +15,10 @@ class SettingsNavContainer extends Component {
     tabBarLabel: 'Settings',
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
     tabBarIcon: ({ tintColor }) => (
-      <Icon name='settings' size={24} color='grey'/>
+      <Image
+        source={require('../../../images/tabs/settings.png')}
+        style={[styles.icon, {tintColor: tintColor}]}
+      />
     ),
   };
   render() {
@@ -23,5 +27,11 @@ class SettingsNavContainer extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  icon: {
+    width: 20,
+    height: 20,
+  },
+});
 
 export default SettingsNavContainer;

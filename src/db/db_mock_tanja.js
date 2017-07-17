@@ -8,10 +8,11 @@ const createConnectData = (description, text) => {
 const createUser = () => {
     let userData_personalData_name = createConnectData('Name','Seiffert')
     let userData_personalData_surname = createConnectData('Vorname','Tanja')
-    let userData_personalData_phone = createConnectData('Handy','2341234 12341234')
+    let userData_personalData_phone = createConnectData('Handy','+49 161-453-289')
+    let userData_personalData_email = createConnectData('Email','tanja.seiffert@saxeed.net')
     let userData_personalData_image = createConnectData('Image',tanja)
-    let userData_hashTagData_color = createConnectData('Lieblingsstyle','Bizz')
-    let userData_hashTagData_hobby = createConnectData('Suche','Pflichpraktikum Marketing')
+    let userData_hashTagData_color = createConnectData('Themengebiet','Gründernetzwerk')
+    let userData_hashTagData_hobby = createConnectData('Organisation','Saxeed')
     let userData_socialData_facebook = createConnectData('Facebook','https://web.facebook.com/DonaldTrump/?_rdc=1&_rdr')
     let userData_socialData_linkedIn = createConnectData('LinkedIn','https://www.linkedin.com/in/donald-trump-jr-4454b862/?locale=de_DE')
     let userData_socialData_twitter = createConnectData('Twitter','https://twitter.com/realdonaldtrump?lang=de')
@@ -20,10 +21,11 @@ const createUser = () => {
     let publicSharedData_personalData = []
     publicSharedData_personalData.push(userData_personalData_name)
     publicSharedData_personalData.push(userData_personalData_phone)
+    publicSharedData_personalData.push(userData_personalData_email)
 
     let publicSharedData_socialData = []
-    publicSharedData_socialData.push(userData_socialData_facebook)
-    publicSharedData_socialData.push(userData_socialData_twitter)
+    // publicSharedData_socialData.push(userData_socialData_facebook)
+    // publicSharedData_socialData.push(userData_socialData_twitter)
 
     let publicSharedData_hashTagData = []
     publicSharedData_hashTagData.push(userData_hashTagData_hobby)

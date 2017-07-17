@@ -17,7 +17,7 @@ import { Image, Button, StyleSheet } from 'react-native'
 
 // const headerColor = 'rgb(20,152,255)';
 const headerColor = '#f5fffa';
-const activeColor = 'blue';
+const activeColor = 'rgb(59,89,152)';
 // TabNavigator is nested inside StackNavigator
 // here roots are defined
 
@@ -25,25 +25,35 @@ const activeColor = 'blue';
 const MainNavigator = TabNavigator({
   Home: {
     screen: ConnectNavContainer,
+    navigationOptions: { title: 'Connect' }
   },
   Chat: {
     screen: ThreadNavContainer,
+    navigationOptions: { title: 'Chat' }
   },
   Contacts: {
     screen: ContactNavContainer,
+    navigationOptions: { title: 'Contacts' }
   },
   Settings: {
     screen: SettingsNavContainer,
+    navigationOptions: { title: 'Settings' }
   },
 },
  {
     tabBarOptions: {
+       activeTintColor: activeColor,
       ...Platform.select({
     android: {
       activeTintColor: activeColor,
+      showIcon : true,
       inactiveTintColor: 'grey',
       labelStyle: {
         fontSize: 12,
+      },
+      iconStyle : {
+       width: 20,
+       height: 20,
       },
       style: {
         backgroundColor: headerColor,

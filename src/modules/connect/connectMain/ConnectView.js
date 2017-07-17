@@ -43,7 +43,6 @@ const ConnectView = (props) => {
                     </Button>
                 </Header>
         <Content style={{marginTop:10}}>
-        <Text> {searchQuery} </Text>
           <List
             dataArray={datas} renderRow={data =>
               <ListItem avatar onPress={() => showContactDetail(navigate,setRecentContactId,data.userId)}>
