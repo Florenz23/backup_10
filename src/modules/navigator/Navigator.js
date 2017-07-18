@@ -69,6 +69,7 @@ const AppNavigator = StackNavigator({
   InfiniteColorStack: {screen: ConnectNavContainer},
   ThreadDetailViewContainer: {screen: ThreadDetailViewContainer},
   ConnectDetail : {screen: ConnectDetailViewContainer},
+  ContactDetail : {screen: ContactDetailViewContainer},
 });
 
 

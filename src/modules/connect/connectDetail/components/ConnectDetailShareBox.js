@@ -8,6 +8,8 @@ import contacts from '../../../../mock/contacts'
 
 import realm from '../../db_ini'
 
+import CheckboxDummy from './CheckboxDummy'
+
 const _getContact = (contactId) => {
 
   const contacts = realm.objects('User')
@@ -106,12 +108,14 @@ const renderData = (contactId) => {
       )
 }
 
+// TODO here should be added the function to share and unshere
 const ConnectDetailShareBox = (props) => {
   const datas = contacts
   const {children} = props
     return (
       <View>
-        {renderData(children)}
+        {/* {renderData(children)} */}
+        <CheckboxDummy />
       </View>
     )
 }
